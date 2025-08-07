@@ -7,7 +7,7 @@ Author:
 Satoshi Nakamoto
 
 ## Table of Contents
-   [Abstract](#abstract)
+[Abstract](#abstract)
 1. [Introduction](#introduction)
 2. [Transactions](#transactions)
 
@@ -24,4 +24,5 @@ These costs and payment uncertainties can be avoided in person by using physical
 
 ## Transactions
 
+...
 
