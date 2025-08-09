@@ -24,8 +24,6 @@ These costs and payment uncertainties can be avoided in person by using physical
 
 ## Transactions
 
-...
+Satoshi defines an electronic coin as a chain of digital signatures. Each owner transfers the coin to the next by digitally signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin. A payee can verify the signatures to verify the chain of ownership.
 
 ![Bitcoin Transactions](images/bitcoin-transactions.png)
-
-![Bitcoin Transactions](images/bitcoin-transactions-resize.png)
