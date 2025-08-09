@@ -26,3 +26,4 @@ These costs and payment uncertainties can be avoided in person by using physical
 
 ...
 
+![Bitcoin Transactions](images/bitcoin-transactions.png)
