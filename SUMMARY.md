@@ -27,3 +27,9 @@ These costs and payment uncertainties can be avoided in person by using physical
 Satoshi defines an electronic coin as a chain of digital signatures. Each owner transfers the coin to the next by digitally signing a hash of the previous transaction and the public key of the next owner and adding these to the end of the coin. A payee can verify the signatures to verify the chain of ownership.
 
 ![Bitcoin Transactions](images/bitcoin-transactions.png)
+
+The problem is that the payee can't verify, in a decentralised way, that one of the owners did not double-spend the coin...  
+For Bitcoin's purposes, the earliest transaction is the one that counts, the network doesn't care about later attempts to double-spend. The only way to confirm the absence of a transaction is to be aware of all transactions.  
+
+**--> For the Bitcoin network to decide which transaction arrived first, it needs to be aware of all transactions. Transactions must be announced publicly, and a system is needed where participants agree on a single history of the order in which the transactions were received.**
+**The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received!!**
