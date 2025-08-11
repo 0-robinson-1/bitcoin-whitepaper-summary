@@ -33,3 +33,6 @@ For Bitcoin's purposes, the earliest transaction is the one that counts, the net
 
 **--> For the Bitcoin network to decide which transaction arrived first, it needs to be aware of all transactions. Transactions must be announced publicly, and a system is needed where participants agree on a single history of the order in which the transactions were received.**
 **The payee needs proof that at the time of each transaction, the majority of nodes agreed it was the first received!!**
+
+## Timestamp Server
+
