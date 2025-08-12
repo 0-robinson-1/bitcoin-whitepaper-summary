@@ -36,3 +36,6 @@ For Bitcoin's purposes, the earliest transaction is the one that counts, the net
 
 ## Timestamp Server
 
+...
+
+![Timestamp Server](images/bitcoin-timestamp-server.png)
