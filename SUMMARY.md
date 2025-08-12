@@ -36,6 +36,7 @@ For Bitcoin's purposes, the earliest transaction is the one that counts, the net
 
 ## Timestamp Server
 
-...
+The solution Satoshi proposes begins with a timestamp server.  
+A timestamp server works by taking a hash of a block of items to be timestamped and widely publishing the hash. The timestamp proves that the data must have existed at the time, in order to get into the hash. Each timestamp includes the previous timestamp in its hash, forming a chain, with each additional timestamp reinforcing the ones before it.
 
 ![Timestamp Server](images/bitcoin-timestamp-server.png)
