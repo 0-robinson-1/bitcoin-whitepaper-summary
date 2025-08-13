@@ -10,8 +10,8 @@ Satoshi Nakamoto
 [Abstract](#abstract)
 1. [Introduction](#introduction)
 2. [Transactions](#transactions)
-3. [Timestamp Server](#timestampServer)
-4. [Proof-of-Work](#ProofOfWork)
+3. [Timestamp Server](#timestamp-server)
+4. [Proof-of-Work](#proof-of-work)
 
 ## Abstract
 
