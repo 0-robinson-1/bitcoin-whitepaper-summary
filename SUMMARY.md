@@ -43,8 +43,13 @@ A timestamp server works by taking a hash of a block of items to be timestamped 
 
 ![Timestamp Server](images/bitcoin-timestamp-server.png)
 
-## 4. Proof-of-Work
+## 4. Proof-of-Work (POW)
 
-To implement a distributed timestamp server on a peer-to-peer basis, Bitcoin will need to use a proof-of-work system. This involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash. For the timestamp network, the proof-of-work is implemented by incrementing a nonce in the block until a value is found that gives the block's hash the required zero bits. 
+To implement a distributed timestamp server on a peer-to-peer basis, Bitcoin will need to use a proof-of-work system. This involves scanning for a value that when hashed, such as with SHA-256, the hash begins with a number of zero bits. The average work required is exponential in the number of zero bits required and can be verified by executing a single hash. For the timestamp network, the proof-of-work is implemented by incrementing a nonce in the block until a value is found that gives the block's hash the required zero bits.  
+**-->The goal is to find a nonce that produces a hash starting with a predetermined number of zeros. When a miner finds a valid nonce, they have "solved" the block and get to broadcast their block to the Bitcoin network.**  
+Once the CPU effort has been expended to make it satisfy the proof-of-work, the block cannot be changed without redoing the work. As later blocks are chained after it, the work to change the block would include redoing all the blocks after it.
 
 ![Proof-of-Work](images/bitcoin-proof-of-work.png)
+
+The proof-of-work also solves the problem of determining representation in majority decision making. POW is essentially one-CPU-one-vote. The majority decision is represented by the longest chain, which has the greatest POW effort invested in it. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the fastest and outpace any competing chains...  
+To compensate for increasing hardware speed and varying interest in running nodes over time, the POW difficulty is determined by a moving average targetting an average number of blocks per hour. If they're generated too fast, the difficulty increases. This target is adjusted periodically to keep the block creation time at approximately 10 minutes...
