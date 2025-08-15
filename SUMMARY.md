@@ -12,6 +12,8 @@ Satoshi Nakamoto
 2. [Transactions](#transactions)
 3. [Timestamp Server](#timestamp-server)
 4. [Proof-of-Work](#proof-of-work)
+5. [Network](#network)
+6. [Incentive](#incentive)
 
 ## Abstract
 
@@ -66,3 +68,6 @@ The steps to run the network are as follows:
   6) Nodes express their acceptance of the block by working on creating the next block in the chain,using the hash of the accepted block as the previous hash.
 
 Nodes always consider the longest chain to be the correct one and will keep working on extending it. If two nodes broadcast different versions of the next block simultaneously, some nodes may receive one or the other first. In that case , they work on the first one they received, but save the other branch in case it becomes longer. The tie will be broken when the next POW is found and one branch becomes longer; the nodes that were working on the other branch will then switch to the longer one. If a node does not receive a block, it will request it when it receives the next block and realizes it missed one.
+
+## 6. Incentive
+
