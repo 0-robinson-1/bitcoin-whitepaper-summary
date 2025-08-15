@@ -53,3 +53,14 @@ Once the CPU effort has been expended to make it satisfy the proof-of-work, the 
 
 The proof-of-work also solves the problem of determining representation in majority decision making. POW is essentially one-CPU-one-vote. The majority decision is represented by the longest chain, which has the greatest POW effort invested in it. If a majority of CPU power is controlled by honest nodes, the honest chain will grow the fastest and outpace any competing chains...  
 To compensate for increasing hardware speed and varying interest in running nodes over time, the POW difficulty is determined by a moving average targetting an average number of blocks per hour, preventing inflation or rapid chain growth. Approximately 1 block is created every 10 minutes, if they're generated too fast, the difficulty increases. This target (a 256-bit integer) is adjusted every **2016 blocks**, which is designed to occur approximately every two weeks (2016 x 10 minutes = 20,160 minutes ≈ 14 days).
+
+## 5. Network
+
+The steps to run the network are as follows:
+
+  1) New transactions are broadcast to all nodes.
+  2) Each node collects new transactions into a block.
+  3) Each node works on finding a difficult proof-of-work for its block.
+  4) When a node finds a POW, it broadcasts the block to all nodes.
+  5) Nodes accept the block only if all transactions in it are valid and not already spent.
+  6) Nodes express their acceptance of the block by working on creating the next block in the chain,using the hash of the accepted block as the previous hash.
