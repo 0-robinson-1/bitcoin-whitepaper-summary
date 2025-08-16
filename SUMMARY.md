@@ -77,3 +77,4 @@ The incentive can also be funded with transaction fees. If the output value of a
 
 ## 7. Reclaiming Disk Space
 
+![Reclaiming Disk Space](images/bitcoin-reclaiming-disk-space.png)
