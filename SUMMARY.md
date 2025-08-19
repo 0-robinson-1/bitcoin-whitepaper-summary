@@ -84,3 +84,5 @@ Once the latest transaction in a coin is buried under enough blocks, the spent t
 
 ## 8. Simplified Payment Verification
 
+It is possible to verify payments without running a full network node. A user only needs to keep a copy of the block headers of the longest POW chain, which he can get by querying network nodes until he's convinced he has the longest chain, and obtain the Merkle branch linking the transaction to the block it's timestamped in. He can't check the transaction for himself, but by linking it to a place in the chain, he can see that a network node has accepted it, and blocks added after it further confirm the network has accepted it.
+
