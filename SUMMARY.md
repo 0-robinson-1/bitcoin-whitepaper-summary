@@ -17,6 +17,7 @@ Satoshi Nakamoto
 7. [Reclaiming Disk Space](#reclaiming-disk-space)
 8. [Simplified Payment Verification](#simplified-payment-verification)
 9. [Combining and Splitting Value](#combining-and-splitting-value)
+10. [Privacy](#privacy)
 
 ## Abstract
 
@@ -98,4 +99,8 @@ Although it would be possible to handle coins individually, it would be unwieldy
 ![Combining and Splitting Value](images/bitcoin-combining-and-splitting-value.png)
 
 It should be noted that fan-out, where a transaction depends on several transactions, and those transactions depend on many more, is not a problem here. There is never the need to extract a complete standalone copy of a transaction's history.
+
+## 10. Privacy
+
+The traditional banking model achieves a level of privacy by limiting acces to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly  preludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous. The public can see that someone is sending an amount to someone else, but without information linking the transaction to anyone. This is similar to the level of information released by stock exchanges, where the time and size of individual trades, the "tape", is made public, but without telling who the parties were.
 
