@@ -104,3 +104,5 @@ It should be noted that fan-out, where a transaction depends on several transact
 
 The traditional banking model achieves a level of privacy by limiting acces to information to the parties involved and the trusted third party. The necessity to announce all transactions publicly  preludes this method, but privacy can still be maintained by breaking the flow of information in another place: by keeping public keys anonymous. The public can see that someone is sending an amount to someone else, but without information linking the transaction to anyone. This is similar to the level of information released by stock exchanges, where the time and size of individual trades, the "tape", is made public, but without telling who the parties were.
 
+![Privacy](images/bitcoin-privacy.png)
+
