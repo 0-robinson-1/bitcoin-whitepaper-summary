@@ -106,3 +106,5 @@ The traditional banking model achieves a level of privacy by limiting acces to i
 
 ![Privacy](images/bitcoin-privacy.png)
 
+As an additional firewall, a new key pair should be used for each transaction to keep them from being linked to a common owner.
+Some linking is still unavoidable with multi-input transactions, which necessarily reveal that their inputs were owned by the same owner. The risk is that if the owner of a key is revealed, linking could reveal other transactions that belonged to the same owner.
