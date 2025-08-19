@@ -15,6 +15,7 @@ Satoshi Nakamoto
 5. [Network](#network)
 6. [Incentive](#incentive)
 7. [Reclaiming Disk Space](#reclaiming-disk-space)
+8. [Simplified Payment Verification](#simplified-payment-verification)
 
 ## Abstract
 
@@ -80,3 +81,6 @@ The incentive can also be funded with transaction fees. If the output value of a
 Once the latest transaction in a coin is buried under enough blocks, the spent transactions before it can be discarded to save disk space. To facilitate this without breaking the block's hash, transactions are hashed in a Merkle tree, with only the root included in the block's hash. Old blocks can then be compacted by stubbing off branches of the tree. The interior hashes do not need to be stored.
 
 ![Reclaiming Disk Space](images/bitcoin-reclaiming-disk-space.png)
+
+## 8. Simplified Payment Verification
+
