@@ -16,6 +16,7 @@ Satoshi Nakamoto
 6. [Incentive](#incentive)
 7. [Reclaiming Disk Space](#reclaiming-disk-space)
 8. [Simplified Payment Verification](#simplified-payment-verification)
+9. [Combining and Splitting Value](#combining-and-splitting-value)
 
 ## Abstract
 
@@ -89,4 +90,9 @@ It is possible to verify payments without running a full network node. A user on
 ![Simplified Payment Verification](images/bitcoin-simplified-payment-verification.png)
 
 As such, the verification is reliable as long as honest nodes control the network, but is more vulnerable if the network is overpowered by an attacker. While network nodes can verify transactions for themselves, the simplified method can be fooled by an attacker's fabricated transactions for as long as the attacker can continue to overpower the network. One strategy to protect against this would be to accept alerts from network nodes when they detect an invalid block, prompting the user's software to download the full block and alerted transactions to confirm the inconsistency. Businesses that receive frequent payments will probably still want to run their own nodes for more independent  security and quicker verification.
+
+
+## 9. Combining and Splitting Value
+
+Although it would be possible to handle coins individually, it would be unwieldy to make a separate transaction for every cent in a transfer. To allow value to be split and combined, transactions contain multiple inputs and outputs. Normally there will be either a single input from a larger previous transaction or multiple inputs combining smaller amounts, and at most two outputs: one for the payment, and one returning the change, if any, back to the sender.
 
