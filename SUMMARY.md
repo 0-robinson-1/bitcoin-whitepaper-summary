@@ -122,3 +122,5 @@ p= probability an honest node finds the next block
 q= probability the attacker finds the next block
 qz= probability the attacker will ever catch up from z blocks behind
 
+![Calculations](images/bitcoin-calculations.png)
+
