@@ -19,6 +19,7 @@ Satoshi Nakamoto
 9. [Combining and Splitting Value](#combining-and-splitting-value)
 10. [Privacy](#privacy)
 11. [Calculations](#calculations)
+12. [Conclusion](#conclusion)
 
 ## Abstract
 
@@ -119,8 +120,8 @@ The scenario is concidered where an attacker tries to generate an alternate chai
 Gambler's Ruin problem Calculation:
 
 p= probability an honest node finds the next block  
-q= probability the attacker finds the next block
-qz= probability the attacker will ever catch up from z blocks behind
+q= probability the attacker finds the next block  
+qz= probability the attacker will ever catch up from z blocks behind  
 
 ![Calculations](images/bitcoin-calculations.png)
 
@@ -134,4 +135,6 @@ It now is concidered how long the recipient of a new transaction needs to wait b
 -->The higher the attackers hash power (q), the more the probability of succes will become. If q approaches 0.5, the network is vulnarable, that's why q>50% hash power is a "51% attack"!!  
 
 It is common to wait for 6 comfirmations (≈1 hour) to be pretty certain that a transaction has been  finalised and is irreversable...  
+
+## 12. Conclusion
 
