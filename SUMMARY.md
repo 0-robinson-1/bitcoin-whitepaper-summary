@@ -115,3 +115,10 @@ Some linking is still unavoidable with multi-input transactions, which necessari
 The scenario is concidered where an attacker tries to generate an alternate chain faster than the honest chain. Even if this is accomplished, it does not throw the system open to arbitrary changes, such as creating value out of thin air or taking money that never belonged to the attacker. Nodes are not going to accept an invalid transaction as payment, and honest nodes will never accept a block containing them. An attacker can only try to change one of his own transactions to take back money he recently spent.  
 --> The race between the honest chain and an attacker chain can be characterized as a Binomial Random Walk.  
 --> The probability of an attacker catching up from a given deficit is analogous to a Gambler's Ruin problem.
+
+Gambler's Ruin problem Calculation:
+
+p= probability an honest node finds the next block  
+q= probability the attacker finds the next block
+qz= probability the attacker will ever catch up from z blocks behind
+
