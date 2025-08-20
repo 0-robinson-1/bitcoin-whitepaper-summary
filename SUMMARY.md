@@ -124,3 +124,14 @@ qz= probability the attacker will ever catch up from z blocks behind
 
 ![Calculations](images/bitcoin-calculations.png)
 
+p+q=1 (Total Hash Power off the Bitcoin Blockchain)  
+Given the assumption that p>q, the probability drops exponentially as the number of blocks the attacker has to catch up with increases.  
+(My interpretation is that p≈the hash power controlled by honest nodes and that q≈hash power controlled by the attacker...)  
+It now is concidered how long the recipient of a new transaction needs to wait before being sufficiently certain the sender can't change the transaction...(z=amount of blocks created on the Bitcoin blockchain since the honest senders transaction was included).  
+
+-->The math proves Bitcoin's security grows exponentially with z (confirmations).  
+-->For a weak attacker (low q), even 6 confirmations make succes probability tiny (≈0.0002%).
+-->The higher the attackers hash power (q), the more the probability of succes will become. If q approaches 0.5, the network is vulnarable, that's why q>50% hash power is a "51% attack"!!  
+
+It is common to wait for 6 comfirmations (≈1 hour) to be pretty certain that a transaction has been  finalised and is irreversable...  
+
