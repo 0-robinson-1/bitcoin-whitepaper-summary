@@ -6,7 +6,7 @@ Bitcoin: A Peer-to-Peer Electronic Cash System
 Author:
 Satoshi Nakamoto
 
-**I (Robinson) have studied the original Bitcoin White paper and have taken notes here to come back to and work on later, feel free to have a read...**
+**I (Robinson) have studied the original Bitcoin White paper (published October 31, 2008) and have taken notes here to come back to and work on later, feel free to have a read...**
 
 ## Table of Contents
 [Abstract](#abstract)
